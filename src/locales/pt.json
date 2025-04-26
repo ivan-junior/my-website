@@ -1,0 +1,86 @@
+{
+  "header": {
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Seu Nome",
+    "role": "Desenvolvedor Full Stack",
+    "description": "Desenvolvedor Full Stack especializado em JavaScript e TypeScript, criando soluções web e mobile inovadoras com foco em IA e automação inteligente.",
+    "cta": "Entre em contato"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Desenvolvedor Full Stack com experiência em JavaScript, TypeScript, React, React Native, Angular e Node.js. Especializado em desenvolvimento de APIs, bancos de dados, integração com serviços em nuvem como AWS e Azure, e desenvolvimento de aplicativos.\n\nAtualmente, atuo no desenvolvimento e manutenção de aplicações web e mobile, criando soluções escaláveis e de alto desempenho. Tenho experiência em automação de processos, otimização de sistemas e desenvolvimento de dashboards interativos.\n\nTambém trabalho com desenvolvimento de APIs integradas a soluções de inteligência artificial, utilizando ferramentas como Cursor, MCPs e AI Agents, voltadas para automação inteligente e assistentes autônomos.\n\nBilíngue em português e inglês, estou sempre buscando novos desafios para aplicar minhas habilidades e contribuir com projetos inovadores.",
+    "downloadCV": "Baixar Currículo"
+  },
+  "experience": {
+    "title": "Experiência",
+    "items": [
+      {
+        "role": "Desenvolvedor Full Stack",
+        "company": "Quiker",
+        "period": "Jan 2024 - Presente",
+        "description": "Atualmente, sou responsável pela manutenção e desenvolvimento de novas funcionalidades para a plataforma da empresa, utilizando uma stack tecnológica que inclui NestJS no backend, banco de dados MongoDB e React (Next.js) no frontend. Além disso, desenvolvo scripts em Python para transformação de dados (ETL) e geração de dashboards, utilizando AWS Glue para execução dos processos. Também atuo no desenvolvimento de APIs integradas a soluções de inteligência artificial, aplicando ferramentas como Cursor, MCPs e AI Agents, com foco em automação inteligente, tomada de decisão assistida e construção de agentes autônomos."
+      },
+      {
+        "role": "Desenvolvedor Full Stack",
+        "company": "Blue Sol Energia Solar",
+        "period": "Fev 2020 - Dez 2023",
+        "description": "Fui responsável pelo desenvolvimento das funcionalidades principais utilizando C#, Node.js e Angular 8 com TypeScript no Azure, além de construir e otimizar APIs RESTful com Node.js e MongoDB. Mantive e automatizei processos em BPMS (TOTVS Fluig) com JavaScript puro e liderei melhorias no frontend e backend com ReactJS e React Native. Também criei pipelines de CI/CD com Azure DevOps, integrei serviços em nuvem da AWS e Azure e otimizei bancos de dados SQL Server. No desenvolvimento do Portal de Franqueados, utilizei C#/.NET, SQL Server e Angular 8, e no Portal de Clientes, trabalhei com Node.js, Next.js, React.js e Salesforce, incluindo seu aplicativo móvel, que foi desenvolvido com React Native, Expo, TypeScript e Tailwind CSS. Durante o processo, utilizei ferramentas de comunicação como Google Meet, Zoom, Slack e Discord e controle de versão com GitHub e Bitbucket."
+      },
+      {
+        "role": "Programador Moodle",
+        "company": "Blue Sol Energia Solar",
+        "period": "Dez 2017 - Fev 2020",
+        "description": "Desenvolvi plugins para Moodle com PHP, JavaScript/jQuery e MySQL, melhorando a experiência do usuário. Trabalhei na otimização do desempenho de sites e consultas de banco de dados para melhorar a velocidade e escalabilidade. Desenvolvi aplicações hospedadas na AWS, aproveitando a computação em nuvem para melhor gestão de recursos. Contribuí no desenvolvimento de backend e integrações de APIs, além de desenvolver um chatbot no WhatsApp com Take Blip e Node.js para automatizar o atendimento ao cliente, o que aumentou a eficiência das interações."
+      },
+      {
+        "role": "Técnico em TI",
+        "company": "SINDEES",
+        "period": "Fev 2012 - Dez 2017",
+        "description": "Ofereci suporte técnico, resolvendo problemas de hardware e software para garantir a confiabilidade dos sistemas. Gerenciei a manutenção de servidores, backups de dados e melhorias na rede para aumentar a segurança de TI. Fui promovido a Gerente de TI, onde supervisionava o departamento de TI e o desenvolvimento de sites. Também auxiliei no setor de faturamento, gerenciando faturas, juros, multas e processos administrativos. Utilizei ferramentas como VSCode, Visual Studio e plataformas em nuvem (Digital Ocean, Cloudways, Heroku, Vercel, Render) para desenvolvimento e implantação de sistemas."
+      },
+      {
+        "role": "Técnico em TI",
+        "company": "Infomais",
+        "period": "Jun 2011 - Fev 2012",
+        "description": "Realizei reparos em hardware, instalações de software e configurações de sistemas para otimizar o desempenho. Ofereci suporte técnico para Windows e Linux, garantindo a estabilidade dos sistemas. Realizei manutenção preventiva e diagnóstico de problemas para minimizar o tempo de inatividade."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "technologies": "Tecnologias que utilizo"
+  },
+  "contact": {
+    "title": "Contato",
+    "nameLabel": "Nome",
+    "emailLabel": "Email",
+    "messageLabel": "Mensagem",
+    "submitButton": "Enviar Mensagem",
+    "successMessage": "Mensagem enviada com sucesso!",
+    "errorMessage": "Ocorreu um erro ao enviar a mensagem.",
+    "validation": {
+      "required": "é obrigatório",
+      "invalid": "é inválido",
+      "invalidEmail": "Por favor, insira um email válido",
+      "nameRequired": "Nome é obrigatório",
+      "nameMaxLength": "Nome deve ter no máximo 100 caracteres",
+      "emailRequired": "Email é obrigatório",
+      "messageRequired": "Mensagem é obrigatória",
+      "messageMaxLength": "Mensagem deve ter no máximo 1000 caracteres"
+    },
+    "sending": "Enviando..."
+  },
+  "footer": {
+    "copyright": "© {year} {name}. Todos os direitos reservados."
+  },
+  "common": {
+    "loadMore": "Ver mais"
+  }
+}

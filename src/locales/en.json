@@ -1,0 +1,86 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Your Name",
+    "role": "Full Stack Developer",
+    "description": "Full Stack Developer specialized in JavaScript and TypeScript, creating innovative web and mobile solutions with a focus on AI and smart automation.",
+    "cta": "Get in touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Full Stack Developer with experience in JavaScript, TypeScript, React, React Native, Angular, and Node.js. Specialized in API development, databases, cloud service integration such as AWS and Azure, and application development.\n\nCurrently, I work on developing and maintaining web and mobile applications, creating scalable and high-performance solutions. I have experience in process automation, system optimization, and interactive dashboard development.\n\nI also work with API development integrated with artificial intelligence solutions, using tools such as Cursor, MCPs, and AI Agents, aimed at smart automation and autonomous assistants.\n\nBilingual in Portuguese and English, I am always looking for new challenges to apply my skills and contribute to innovative projects.",
+    "downloadCV": "Download Resume"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Full Stack Developer",
+        "company": "Quiker",
+        "period": "Jan 2024 - Present",
+        "description": " I am currently responsible for maintaining and developing new features for the company's platform, using a technology stack that includes NestJS on the backend, MongoDB as the database, and React (Next.js) on the frontend. Additionally, I develop Python scripts for data transformation (ETL) and dashboard generation, utilizing AWS Glue to execute the processes. Additionally, I work on building APIs integrated with artificial intelligence solutions, leveraging tools like Cursor, MCPs, and AI Agents to enable smart automation, assisted decision-making, and autonomous agents"
+      },
+      {
+        "role": "Full Stack Developer",
+        "company": "Blue Sol Solar Energy",
+        "period": "Feb 2020 - Dec 2023",
+        "description": "I was responsible for developing core functionalities using C#, Node.js, and Angular 8 with TypeScript on Azure, as well as building and optimizing RESTful APIs with Node.js and MongoDB. I maintained and automated processes in BPMS (TOTVS Fluig) with pure JavaScript and led improvements on both frontend and backend using ReactJS and React Native. Additionally, I created CI/CD pipelines with Azure DevOps, integrated cloud services from AWS and Azure, and optimized SQL Server databases. For the Franchisee Portal development, I utilized C#/.NET, SQL Server, and Angular 8, while for the Customer Portal, I worked with Node.js, Next.js, React.js, and Salesforce, including its mobile application, which was developed using React Native, Expo, TypeScript, and Tailwind CSS. Throughout the process, I used communication tools such as Google Meet, Zoom, Slack, and Discord, and managed version control with GitHub and Bitbucket."
+      },
+      {
+        "role": "Moodle Developer",
+        "company": "Blue Sol Solar Energy",
+        "period": "Dec 2017 - Feb 2020",
+        "description": "I developed plugins for Moodle using PHP, JavaScript/jQuery, and MySQL, enhancing the user experience. I worked on optimizing website performance and database queries to improve speed and scalability. I developed applications hosted on AWS, leveraging cloud computing for better resource management. Additionally, I contributed to backend development and API integrations and developed a WhatsApp chatbot using Take Blip and Node.js to automate customer support, increasing interaction efficiency."
+      },
+      {
+        "role": "IT Technician",
+        "company": "SINDEES",
+        "period": "Feb 2012 - Dec 2017",
+        "description": "I provided technical support, troubleshooting hardware and software issues to ensure system reliability. I managed server maintenance, data backups, and network improvements to enhance IT security. I was promoted to IT Manager, where I supervised the IT department and website development. I also assisted in the billing department, managing invoices, interest, penalties, and administrative processes. I utilized tools such as VSCode, Visual Studio, and cloud platforms (Digital Ocean, Cloudways, Heroku, Vercel, Render) for system development and deployment."
+      },
+      {
+        "role": "IT Technician",
+        "company": "Infomais",
+        "period": "Jun 2011 - Feb 2012",
+        "description": "I performed hardware repairs, software installations, and system configurations to optimize performance. I provided technical support for Windows and Linux, ensuring system stability. I conducted preventive maintenance and problem diagnostics to minimize downtime."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "technologies": "Technologies I use"
+  },
+  "contact": {
+    "title": "Contact",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submitButton": "Send Message",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "An error occurred while sending the message.",
+    "validation": {
+      "required": "is required",
+      "invalid": "is invalid",
+      "invalidEmail": "Please enter a valid email address",
+      "nameRequired": "Name is required",
+      "nameMaxLength": "Name must be at most 100 characters",
+      "emailRequired": "Email is required",
+      "messageRequired": "Message is required",
+      "messageMaxLength": "Message must be at most 1000 characters"
+    },
+    "sending": "Sending..."
+  },
+  "footer": {
+    "copyright": "© {year} {name}. All rights reserved."
+  },
+  "common": {
+    "loadMore": "See more"
+  }
+}

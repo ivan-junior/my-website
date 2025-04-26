@@ -3,6 +3,7 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Experience as ExperienceType } from "../types/experience";
 
 export default function Experience() {
   const { translations, t } = useLanguage();
@@ -34,37 +35,39 @@ export default function Experience() {
 
         <div className="max-w-3xl mx-auto">
           <div className="relative border-l-2 border-primary-500 pl-8 ml-4">
-            {visibleExperiences.map((experience: any, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="mb-12 relative"
-              >
-                <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-[#0284c7] dark:bg-[#0ea5e9] border-2 border-[#0ea5e9] dark:border-[#38bdf8] shadow-md transform scale-100 hover:scale-110 transition-transform duration-200 z-10"></div>
+            {visibleExperiences.map(
+              (experience: ExperienceType, index: number) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="mb-12 relative"
+                >
+                  <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-[#0284c7] dark:bg-[#0ea5e9] border-2 border-[#0ea5e9] dark:border-[#38bdf8] shadow-md transform scale-100 hover:scale-110 transition-transform duration-200 z-10"></div>
 
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                      {experience.role}
-                    </h3>
-                    <span className="text-sm font-medium text-primary-600">
-                      {experience.period}
-                    </span>
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                        {experience.role}
+                      </h3>
+                      <span className="text-sm font-medium text-primary-600">
+                        {experience.period}
+                      </span>
+                    </div>
+
+                    <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      {experience.company}
+                    </p>
+
+                    <p className="text-gray-600 dark:text-gray-400">
+                      {experience.description}
+                    </p>
                   </div>
-
-                  <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    {experience.company}
-                  </p>
-
-                  <p className="text-gray-600 dark:text-gray-400">
-                    {experience.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              )
+            )}
           </div>
 
           {showLoadMore && (

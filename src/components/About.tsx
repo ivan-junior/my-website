@@ -3,6 +3,7 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import { FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
   const { language, t } = useLanguage();
@@ -41,9 +42,11 @@ export default function About() {
             className="w-full md:w-1/3 flex justify-center"
           >
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary-200 dark:border-primary-800">
-              <img
+              <Image
                 src="/profile.jpg"
                 alt="Ivan Junior"
+                width={256}
+                height={256}
                 className="w-full h-full object-cover"
               />
             </div>

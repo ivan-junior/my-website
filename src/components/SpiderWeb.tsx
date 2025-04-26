@@ -28,8 +28,8 @@ const SpiderWeb = () => {
     // Points configuration
     const POINTS_COUNT = 130;
     const LINE_LENGTH = 150;
-    let points: { x: number; y: number; vx: number; vy: number }[] = [];
-    let mouse = { x: 0, y: 0 };
+    const points: { x: number; y: number; vx: number; vy: number }[] = [];
+    const mouse = { x: 0, y: 0 };
 
     // Initialize points
     for (let i = 0; i < POINTS_COUNT; i++) {

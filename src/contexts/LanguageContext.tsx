@@ -7,6 +7,7 @@ import enTranslations from "../locales/en.json";
 type Language = "pt" | "en";
 
 type Translations = {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   [key: string]: any;
 };
 

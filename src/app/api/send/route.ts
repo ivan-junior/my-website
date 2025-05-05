@@ -33,6 +33,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: Request) {
   try {
     const body = await request.json();
+    const url = new URL(request.url);
+    const origin = url.origin;
 
     // Validação dos dados recebidos
     const result = apiContactFormSchema.safeParse(body);
@@ -56,16 +58,16 @@ export async function POST(request: Request) {
       throw new Error("RESEND_TO_EMAIL is not defined");
     }
 
-    const data = await resend.emails.send({
+    await resend.emails.send({
       from: "onboarding@resend.dev",
       to: process.env.RESEND_TO_EMAIL,
       replyTo: email,
       subject: `Nova mensagem de contato de ${name} via site`,
-      html: generateContactEmailHtml({ name, email, message }),
-      text: generateContactEmailText({ name, email, message }), // Fallback para clientes que não suportam HTML
+      html: generateContactEmailHtml({ name, email, message, origin }),
+      text: generateContactEmailText({ name, email, message, origin }), // Fallback para clientes que não suportam HTML
     });
 
-    return NextResponse.json({ data });
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Error sending email:", error);
     return NextResponse.json(

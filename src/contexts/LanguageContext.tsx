@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import ptTranslations from "../locales/pt.json";
 import enTranslations from "../locales/en.json";
 
-type Language = "pt" | "en";
+export type Language = "pt" | "en";
 
 type Translations = {
   /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -13,7 +13,7 @@ type Translations = {
 
 type LanguageContextType = {
   language: Language;
-  translations: Translations;
+  translations: any;
   toggleLanguage: () => void;
   t: (key: string) => string;
 };
@@ -27,10 +27,18 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined
 );
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("pt");
+export function LanguageProvider({
+  children,
+  initialLanguage = "pt",
+}: {
+  children: React.ReactNode;
+  initialLanguage?: Language;
+}) {
+  const [language, setLanguage] = useState<Language>(initialLanguage);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     // Check if user has a saved language preference
     const savedLanguage = localStorage.getItem("language") as Language | null;
 
@@ -42,7 +50,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const toggleLanguage = () => {
     const newLanguage = language === "pt" ? "en" : "pt";
     setLanguage(newLanguage);
-    localStorage.setItem("language", newLanguage);
+    if (isClient) {
+      localStorage.setItem("language", newLanguage);
+    }
   };
 
   // Helper function to get nested translations

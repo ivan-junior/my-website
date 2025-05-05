@@ -41,7 +41,7 @@ export default function TypingTerminal() {
       {/* Terminal Content */}
       <div className="p-6">
         <div className="text-green-500 font-mono text-lg md:text-xl min-w-[280px]">
-          <span className="text-blue-400">~/portfolio</span>{" "}
+          <span className="text-blue-400">~/home</span>{" "}
           <span className="text-pink-500">$</span>{" "}
           <span className="text-white inline-block min-w-[200px]">
             <Typewriter

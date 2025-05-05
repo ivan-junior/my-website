@@ -2,16 +2,14 @@ interface ContactEmailProps {
   name: string;
   email: string;
   message: string;
+  origin: string;
 }
-
-// Base64 do ícone de email em branco
-const EMAIL_ICON_BASE64 =
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADT0lEQVR4nO2ZW2xMURSGV7wgxC0SJC458YCIPHjwIEoQJEJCkKgIEhEvJBJBQkiEiEQiIURIRNzafY5SHTpHO1MdVVVpadfZu6PWmTNTqpSZ6eyz1zlNnGSS6Zzz7/Wdf6+99tpnBgbG7J8wYBaQD5wG6oEW4DvQDXQBn4Fm4BlwD6gE1gPhge7zXw2YDhQCT4EfGusHUAcsA8IC0WcIsBSo1gxcAXYDs4HxwAQgFogGooAIIBGYD2wHLgLtwFdgbSD6jAPOAb+AJmATMM5hvwOBVOAG8APoALL93V8CcAf4CRwBwmz2GwKsBxqBXiDPn/1NBR4AvcB+wOXnmHEaqAQm+aO/MOA60ANk+juWgwdQBkT6OlYUcAvoA7b4O3gvS1UCTPRlvGlAHfATyApU8F62UgVM8UXMOcBH4DuQEejgvWwlEjnWm/GmAC+AH8DyYAneaxZu2425GHgH9AArQiF4LztpBBbYiZkKvLUSVzCsEKhwMPYk4KmVyLEBKAcKHPYRDlRZM5EUbMF7zUKlg5hxwH0rcaUGY/BeNnLRZszZQIuVyFKDNXgvG7lhI2YG0G4lsnwJxuC9bOSWjZi5VhJLDebgvWzkro2YB6xELg724L1s5IGNmMesRC4NheC9bOSJjZi1ViKXh0rwXjbyDJhuI2a9lciVoRS8l400ANNsxGyyErkqlIL3spFmYKaNmB+sRK4OpeC9bKQVmG0jZoeVyLWhFLyXjXwC5tiI+cVK5LpQCt7LRr4C823E7LYSeUMoBe9lIz3AQhsxe61E3hRKwXvZSB+wxEbMPiuRt4RS8F42IrVCqo2Y/VYibw2l4L1sRGqFNBsx5ViEHPxvD6XgvWxEaoXFNmIOWolcGkrBe9mI1ArLbMQ8YiVyWSgF72UjUiustBGz3ErkilAK3stGpFZYYyNmpZXI1aEUvJeNSK2w3kbMaiuRa0IpeC8bkVphk42Yt61Erg+l4L1sRGqFLTZi3rUSuTGUgveyEakVcmzEbLQSuSmUgveyEakV8mzEbLYS+V4oBe9lI1Ir7LQRs8VK5AehFLyXjUitsNdGzFYrkR+GUvBeNiK1wgEbMdustkd+HErBe9mI1AqHbMRst9oeuQkYGDNn/2X7A6iNJ/S8MHrEAAAAAElFTkSuQmCC";
 
 export function generateContactEmailHtml({
   name,
   email,
   message,
+  origin,
 }: ContactEmailProps) {
   return `
     <!DOCTYPE html>
@@ -97,7 +95,7 @@ export function generateContactEmailHtml({
 				<div class="top-container">
 					<div class="container">
 						<div class="header">
-							<img src="${EMAIL_ICON_BASE64}" alt="Email icon" class="email-icon">
+							<img src="${origin}/email-icon.png" alt="Email icon" class="email-icon">
 						</div>
 						
 						<div class="content">

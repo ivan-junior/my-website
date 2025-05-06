@@ -6,13 +6,9 @@ import enTranslations from "../locales/en.json";
 
 export type Language = "pt" | "en";
 
-type Translations = {
-  /* eslint-disable @typescript-eslint/no-explicit-any */
-  [key: string]: any;
-};
-
 type LanguageContextType = {
   language: Language;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   translations: any;
   toggleLanguage: () => void;
   t: (key: string) => string;
@@ -58,6 +54,7 @@ export function LanguageProvider({
   // Helper function to get nested translations
   const t = (key: string): string => {
     const keys = key.split(".");
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let result: any = translations[language];
 
     for (const k of keys) {

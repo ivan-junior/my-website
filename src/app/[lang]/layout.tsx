@@ -5,9 +5,18 @@ import DynamicFavicon from "@/components/DynamicFavicon";
 import "../globals.css";
 import "../favicon.css";
 import type { Language } from "@/contexts/LanguageContext";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   return [{ lang: "pt" }, { lang: "en" }];
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Ivan Junior | Desenvolvedor Full Stack",
+    description:
+      "Desenvolvedor Full Stack especializado em JavaScript e TypeScript, criando soluções web e mobile inovadoras com foco em IA e automação inteligente.",
+  };
 }
 
 export default async function RootLayout({
@@ -15,10 +24,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
-  // Aguardar a resolução dos parâmetros
-  const { lang } = await Promise.resolve(params);
+  const { lang } = await params;
 
   // Garantir que o lang é um valor válido do tipo Language
   const validLang: Language = lang === "en" ? "en" : "pt";

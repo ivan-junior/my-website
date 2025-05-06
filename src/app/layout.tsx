@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ivan Junior | Desenvolvedor Full Stack",
-  description: "Portfolio e currículo de desenvolvedor full stack",
+  description:
+    "Desenvolvedor Full Stack especializado em JavaScript e TypeScript, criando soluções web e mobile inovadoras com foco em IA e automação inteligente.",
 };
 
 export default function RootLayout({

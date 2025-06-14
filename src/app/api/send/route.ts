@@ -59,7 +59,7 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev",
       to: process.env.RESEND_TO_EMAIL,
       replyTo: email,
       subject: `Nova mensagem de contato de ${name} via site`,
